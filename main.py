@@ -1,13 +1,19 @@
 #https://www.patreon.com/posts/45998588
 
 # import libraries
+# turtle is library for graphics
 import turtle
+# 
 import random
+# 
 import time
-from tkinter import *
-import tkinter as tk
-master = tk.Tk()
-bgimg= tk.PhotoImage(file = "C:\\Users\\J.Mikles23\\OneDrive - Bellarmine College Preparatory\\ComputerClass\\game\\JETS_files\\New_York_Jets_logo.svg.png")
+# 
+import os
+
+# access to files...
+game_folder = os.path.dirname(__file__)
+
+bgimg = os.path.join(game_folder, )
 
 limg= Label(master, i=bgimg)
 limg.pack()
@@ -20,8 +26,6 @@ screen.title('Joey Snake Game')
 screen.setup(width = 850, height = 850)
 screen.tracer(0)
 turtle.bgcolor('green')
-
-
 
 #create borders
 
